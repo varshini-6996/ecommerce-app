@@ -23,7 +23,7 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
 // API Base URL (Point this to your server.js address locally, e.g., http://localhost:5000)
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'https://ecommerce-app-4mbu.onrender.com/api';
 
 // Create an Axios instance for easy configuration
 const api = axios.create({
