@@ -693,14 +693,9 @@ const AdminDashboard = ({ navigate }) => {
 
 // --- MAIN APP COMPONENT ---
 export default function App() {
-  const [currentView, setCurrentView] = useState('catalog');
+  const [currentView, setCurrentView] = useState('dashboard');
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [isCartOpen, setIsCartOpen] = useState(false);
-  useEffect(() => {
-  if (!isAuthLoading && user) {
-    setCurrentView('catalog');
-  }
-}, [user, isAuthLoading]);
 
   const navigate = (view) => {
     setCurrentView(view);
